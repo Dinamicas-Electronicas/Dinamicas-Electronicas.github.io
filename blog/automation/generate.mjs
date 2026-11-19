@@ -161,7 +161,12 @@ function main() {
     try {
       commits = collectCommits(repo, since, NOW, clonedDirs);
     } catch (error) {
-      throw new Error(`No se pudo leer el historial de ${repo.repo}: ${error.message}`);
+      const message = String(error.stderr || error.message || error).trim();
+      if (isAccessError(message)) {
+        log(`· ${repo.name}: sin acceso al repositorio (${firstLine(message)}). Se omite.`);
+        continue;
+      }
+      throw new Error(`No se pudo leer el historial de ${repo.repo}: ${message}`);
     }
 
     if (commits.length === 0) {
@@ -299,6 +304,7 @@ function cloneRepo(repo, dir, since) {
 }
 
 function remoteUrl(repo) {
+  if (repo.auth === "ssh") return `git@github.com:${repo.repo}.git`;
   if (!TOKEN) return `https://github.com/${repo.repo}.git`;
   return `https://x-access-token:${encodeURIComponent(TOKEN)}@github.com/${repo.repo}.git`;
 }
@@ -689,6 +695,16 @@ function escXml(value) {
 
 function log(message) {
   console.log(message);
+}
+
+function firstLine(message) {
+  return String(message).split("\n")[0].replace(/^fatal:\s*/i, "");
+}
+
+function isAccessError(message) {
+  return /repository .*not found|could not read Username|Authentication failed|Permission denied|terminal prompts disabled|access denied|does not exist/i.test(
+    String(message),
+  );
 }
 
 function parseArgs(args) {

@@ -41,11 +41,13 @@ se conservan).
 
 ## Token
 
-Los cuatro repositorios actuales son públicos, por lo que el workflow funciona
-sin configuración adicional usando `github.token`. Si algún repositorio pasa a
-ser privado, crea un secreto `BLOG_GITHUB_TOKEN` con un PAT de solo lectura
-(permiso *Contents: Read* sobre esos repositorios). El workflow lo usará de
-forma automática.
+`expanse` y `rss2` son públicos y se leen sin credenciales. `chatland` y
+`vuigram` son privados: el workflow necesita un secreto `BLOG_GITHUB_TOKEN` con
+un PAT de solo lectura (*Contents: Read* sobre esos dos repositorios). Sin ese
+secreto, el generador omite los repos privados y publica el resto sin fallar.
+
+El `GITHUB_TOKEN` del propio workflow se usa para hacer push a `main`; no hace
+falta darle acceso a los otros repositorios.
 
 ## Ejecución manual
 
