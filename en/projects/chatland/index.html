@@ -138,6 +138,16 @@ EN
         <p>Tic-tac-toe, connect four, battleship, snakes and ladders, hangman and parchís, refereed in Lua inside Prosody.</p>
       </li>
       <li class="feature-card">
+        <span class="feature-card__label">Lighting</span>
+        <h3>Switchable lights</h3>
+        <p>81 light fixtures across the 13 scenes, with on/off decided on the server and applied in Godot.</p>
+      </li>
+      <li class="feature-card">
+        <span class="feature-card__label">Assets</span>
+        <h3>Downloadable catalogue</h3>
+        <p>125 catalogued assets across scenes, avatars and prefabs, downloaded on demand with SHA-256 and caching on Android.</p>
+      </li>
+      <li class="feature-card">
         <span class="feature-card__label">Bridge</span>
         <h3>App and Godot over Binder</h3>
         <p>SpatialBridgeService validates and relays what the Godot HUD sends: chat, attachments, voice and layout.</p>
@@ -194,6 +204,7 @@ Godot      presentation, HUD and audio (no authoritative state)</code></pre>
       <li>No MAM archive, push notifications or group calls with an SFU.</li>
       <li>Google sign-in derives the XMPP password on the client; Prosody does not validate the token.</li>
       <li>Incomplete MUC moderation from the UI and no instrumented tests in CI.</li>
+      <li>The asset catalogue still relies on a real R2 bucket that has not been connected yet.</li>
     </ul>
     <h3>Declared debt</h3>
     <ul class="roadmap">
