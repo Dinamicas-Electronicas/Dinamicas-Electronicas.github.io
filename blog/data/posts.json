@@ -1,5 +1,121 @@
 [
   {
+    "slug": "2026-11-23-expanse",
+    "repo": "expanse",
+    "repoName": "Expanse",
+    "repoUrl": "https://github.com/Dinamicas-Electronicas/expanse",
+    "projectPath": "/proyectos/expanse/",
+    "projectPathEn": "/projects/expanse/",
+    "date": "2026-11-23",
+    "from": "2026-11-19",
+    "to": "2026-11-23T17:34:25.480Z",
+    "hidden": 0,
+    "commits": [
+      {
+        "sha": "7b4583a",
+        "date": "2026-11-20",
+        "type": "fix",
+        "scope": "ha",
+        "subject": "backup sidecar sin root con backup-init",
+        "url": "https://github.com/Dinamicas-Electronicas/expanse/commit/7b4583af1455ba34621555132a663cb68b5a95dc"
+      },
+      {
+        "sha": "9ec2673",
+        "date": "2026-11-20",
+        "type": "fix",
+        "scope": "security",
+        "subject": "PgBouncer SCRAM, cookie por share y HA server-only",
+        "url": "https://github.com/Dinamicas-Electronicas/expanse/commit/9ec26735426139d368e3a35721daa28766f0bc8c"
+      },
+      {
+        "sha": "0ebfcc7",
+        "date": "2026-11-20",
+        "type": "fix",
+        "scope": "stability",
+        "subject": "lock de despliegue distribuido en MongoDB",
+        "url": "https://github.com/Dinamicas-Electronicas/expanse/commit/0ebfcc76b14990ce7eba2cc842d3f16e1026484f"
+      },
+      {
+        "sha": "9da75a6",
+        "date": "2026-11-20",
+        "type": "fix",
+        "scope": "security",
+        "subject": "HA con Postgres mantenido, workdir persistente y atribución global",
+        "url": "https://github.com/Dinamicas-Electronicas/expanse/commit/9da75a6f0fbce106fff80005d127ad99269b282a"
+      },
+      {
+        "sha": "663127a",
+        "date": "2026-11-20",
+        "type": "docs",
+        "scope": "security",
+        "subject": "revisión, README y descripción para Docker Hub",
+        "url": "https://github.com/Dinamicas-Electronicas/expanse/commit/663127aeea538eb06915876430296a77f326665a"
+      },
+      {
+        "sha": "90ebc1b",
+        "date": "2026-11-20",
+        "type": "fix",
+        "scope": "ha",
+        "subject": "validar stack HA real y corregir imágenes, réplica y pgbouncer",
+        "url": "https://github.com/Dinamicas-Electronicas/expanse/commit/90ebc1b5bbd1ff3294ec1a92efc961943e555d4e"
+      },
+      {
+        "sha": "c6cebb8",
+        "date": "2026-11-20",
+        "type": "docs",
+        "scope": null,
+        "subject": "actualizar estado de P2 tras MFA, shares y socket proxy",
+        "url": "https://github.com/Dinamicas-Electronicas/expanse/commit/c6cebb8c05b90e107b16746284ea92055e58a676"
+      },
+      {
+        "sha": "1831f59",
+        "date": "2026-11-20",
+        "type": "other",
+        "scope": null,
+        "subject": "a11y: movimiento reducido, aria-live y nombres accesibles",
+        "url": "https://github.com/Dinamicas-Electronicas/expanse/commit/1831f59a28c1b0273b39ab04cd26580d4b94f10f"
+      },
+      {
+        "sha": "cddb96b",
+        "date": "2026-11-20",
+        "type": "feat",
+        "scope": "share",
+        "subject": "protección con contraseña y socket proxy opcional",
+        "url": "https://github.com/Dinamicas-Electronicas/expanse/commit/cddb96b0de6dba29b8945c8b217a9781f099a2d5"
+      }
+    ]
+  },
+  {
+    "slug": "2026-11-23-rss2",
+    "repo": "rss2",
+    "repoName": "RSS2",
+    "repoUrl": "https://github.com/Dinamicas-Electronicas/rss2",
+    "projectPath": "/proyectos/rss2/",
+    "projectPathEn": "/projects/rss2/",
+    "date": "2026-11-23",
+    "from": "2026-11-19",
+    "to": "2026-11-23T17:34:25.480Z",
+    "hidden": 0,
+    "commits": [
+      {
+        "sha": "dbbed23",
+        "date": "2026-11-21",
+        "type": "fix",
+        "scope": "cache",
+        "subject": "evitar cachés vacías en el primer arranque",
+        "url": "https://github.com/Dinamicas-Electronicas/rss2/commit/dbbed23dc0da649fdaa824d7d23a65866a7c9938"
+      },
+      {
+        "sha": "16dfb07",
+        "date": "2026-11-21",
+        "type": "docs",
+        "scope": "deploy",
+        "subject": "registrar incidencias de caché del primer arranque",
+        "url": "https://github.com/Dinamicas-Electronicas/rss2/commit/16dfb074455d7fabf75f361d66403b34087bd8f0"
+      }
+    ]
+  },
+  {
     "slug": "2026-11-19-expanse",
     "repo": "expanse",
     "repoName": "Expanse",
